@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Video & Content Platform Backend API
 
 A production-ready, highly optimized, and scalable backend API engineered for a video sharing and social engagement platform (resembling YouTube/Twitter). This system handles video storage, user authentication, interactive social feeds, subscriptions, comments, likes, playlists, and channel analytics, all designed with clean routing and robust database aggregations.
