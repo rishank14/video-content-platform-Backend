@@ -4,6 +4,26 @@ A production-ready, highly optimized, and scalable backend API engineered for a 
 
 ---
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+  - [Authentication & Authorization](#authentication--authorization)
+  - [Content Management](#content-management)
+  - [Database & Performance](#database--performance)
+  - [Developer Experience](#developer-experience)
+- [Tech Stack](#tech-stack)
+- [Folder Structure](#folder-structure)
+- [Architecture](#architecture)
+- [API Overview](#api-overview)
+- [Database Design](#database-design)
+- [Error Handling](#error-handling)
+- [Getting Started](#getting-started)
+- [License](#license)
+- [Author](#author)
+
+---
+
 ## Overview
 
 The Core Video Engine API provides a backend architecture using Node.js, Express, and MongoDB. The system utilizes industry-standard design patterns, combining token-based authentication (JWTs stored in secure, HTTP-only cookies), local file upload staging via Multer, and cloud asset transformation and delivery through Cloudinary CDN. The application structure enforces strict separation of concerns among routes, controllers, middleware, utility helpers, and database models.
