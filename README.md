@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Video & Content Platform Backend API
 
 A production-ready, highly optimized, and scalable backend API engineered for a video sharing and social engagement platform (resembling YouTube/Twitter). This system handles video storage, user authentication, interactive social feeds, subscriptions, comments, likes, playlists, and channel analytics, all designed with clean routing and robust database aggregations.
@@ -35,19 +34,11 @@ The Core Video Engine API provides a backend architecture using Node.js, Express
 - **ES Modules**: Modern ES6 import/export syntax for clean, standard modules.
 - **Live Reloading**: Structured `nodemon` commands configuration with environment variables parsed on execution.
 - **Code Consistency**: Formatted strictly according to Prettier formatting guidelines.
-=======
-# Full-Featured Video & Content Platform Backend
-
-- [Model link](https://app.eraser.io/workspace/8czR6Kc1FZeu7ZsXhDI3?origin=share)
-
-This is a complete backend application built using **Node.js**, **Express.js**, and **MongoDB**, designed to power a modern video hosting and content-sharing platform. It includes secure authentication, media uploads, user interactions, content organization, and microblogging capabilities — all developed following industry-standard best practices for scalability, maintainability, and security.
->>>>>>> 25768741b244207c3baa9bba7e81f23393f1694e
 
 ---
 
 ## Tech Stack
 
-<<<<<<< HEAD
 ### Backend Core
 - **Node.js**: Asynchronous JavaScript runtime environment.
 - **Express.js (v5.1.0)**: Fast, minimalist web framework for building APIs.
@@ -116,11 +107,6 @@ backend/
 │   │   ├── tweet.routes.js
 │   │   ├── user.routes.js
 │   │   └── video.routes.js
-│   ├── utils/               # Common helper utilities (API response/error classes, file uploads)
-│   │   ├── ApiError.js
-│   │   ├── ApiResponse.js
-│   │   ├── asyncHandler.js
-│   │   └── cloudinary.js
 │   ├── app.js               # Instantiates Express application and core middlewares
 │   ├── constants.js         # Constant project configurations
 │   └── index.js             # Application entry point (connects DB and starts server)
@@ -154,8 +140,8 @@ Database (Performs Mongoose/MongoDB persistence)
 
 1. **Request Reception**: An incoming API request lands on the designated route in `src/routes/`.
 2. **Middleware Execution**: The request passes through pre-processing layers such as CORS verification, cookie-parsing, JWT authentication checks in [auth.middleware.js](src/middlewares/auth.middleware.js), or file upload preparation in [multer.middleware.js](src/middlewares/multer.middleware.js).
-3. **Controller Handling**: The request context is handed to controllers in `src/controllers/`. The controller validates req parameters, delegates complex operations to utilities (e.g., Cloudinary uploads), queries the database models, and generates standard payloads.
-4. **Utility Integration**: Helper systems in `src/utils/` standardizes error tracking ([ApiError.js](src/utils/ApiError.js)) or responses ([ApiResponse.js](src/utils/ApiResponse.js)).
+3. **Controller Handling**: The request context is handed to controllers in `src/controllers/`. The controller validates request parameters, delegates complex operations to utilities (e.g., Cloudinary uploads), queries the database models, and generates standard payloads.
+4. **Utility Integration**: Helper systems in `src/utils/` standardize error tracking ([ApiError.js](src/utils/ApiError.js)) or responses ([ApiResponse.js](src/utils/ApiResponse.js)).
 5. **Database Interaction**: Mongoose schemas in `src/models/` map structures to MongoDB collections, invoking pre-hooks (like password hashing) and validation before write completion.
 
 ---
@@ -321,27 +307,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## Author
 
 **Rishank Kalra**
-=======
-- **Node.js**, **Express.js** – Fast and scalable server-side framework  
-- **MongoDB**, **Mongoose** – Flexible and efficient data modeling  
-- **JWT + Refresh Tokens** – Stateless and secure authentication  
-- **bcrypt** – Password hashing and credential security  
-- **Cloudinary** – Image and video uploads with CDN delivery  
-- **Multer**, **cookie-parser**, **cors**, **dotenv** – File uploads, cookies, CORS, and config management
-
----
-
-## Features
-
-The backend supports secure user registration and login with JWT-based authentication and refresh token handling. Users can manage their profile, update account details, change passwords, and upload avatars and cover images. Authentication is handled via HTTP-only cookies for enhanced security.
-
-Video-related functionality includes uploading, editing, deleting, and streaming videos, as well as liking, disliking, commenting, replying, and maintaining a watch history. Users can also create and manage playlists, organize content, and search/filter videos.
-
-A full subscription system allows users to subscribe or unsubscribe from channels, view subscriber/following lists, and track engagement through a dedicated dashboard showing uploads and channel stats.
-
-Additionally, a lightweight microblogging system enables users to post short-form content, interact with tweets through likes and comments, and manage their content seamlessly.
-
-All routes are RESTful, protected with middleware, and return consistent, structured responses through custom API utilities and error handling layers.
-
----
->>>>>>> 25768741b244207c3baa9bba7e81f23393f1694e
